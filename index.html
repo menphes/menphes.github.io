@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Resume: Douglas Falcão</title>
+        <style type="text/css">
+            #page {
+                width: 100%;
+                height: 100%;
+                margin-top: -8px;
+                /* background: pink; */
+            }
+
+            #content {
+                width: 210mm;
+                height: 100%;
+                background: whitesmoke;
+                margin-top: 8px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h1 {
+                color: #2079c7;
+                font-weight: 700;
+                font-size: 10pt;
+                font-family: "Open Sans";
+                font-style: normal;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            #pageBreak {
+                page-break-before: always;
+                margin-top: 75px;
+            }
+
+            #column_Left {
+                width: 65%;
+                height: 100%;
+                padding-right: 15px;
+                padding-left: 30px;
+                background:white;
+                display: inline-block;
+            }
+
+            #name {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 700;
+                font-size: 27pt;
+                font-family: "Merriweather";
+                font-style: normal;
+                margin-top: 50px;
+                margin-bottom: 20px;  
+            }
+
+            #summary {
+                width: 100%;
+                height: 100%;
+                color: #2079c7;
+                font-weight: 400;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #summary span {
+                color: #666666;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal;
+            }
+
+            #experiences {
+                width: 100%;
+                height: 100%;
+            }
+
+            #jobs {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+
+            #jobs ul {
+                padding: 0;
+                margin-left: 15px;
+            }
+
+            #jobs_Title {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 700;
+                font-size: 12pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #jobs_Company {
+                width: 100%;
+                height: 100%;
+                color: #2079c7;
+                font-weight: 400;
+                font-size: 11pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #jobs_Date {
+                width: 100%;
+                height: 100%;
+                margin-top: 4px;
+                margin-bottom: 6px;
+                color: #666666;
+                text-decoration: none;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #jobs_Description {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 400;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal;
+            }
+
+            #qualifications {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 25px;    
+            }
+
+            #qualifications_Header {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 700;
+                font-size: 12pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #qualifications ul {
+                padding: 0;
+            }
+
+            #qualifications li {
+                display: inline-block;
+                background: #dddddd;
+                padding: 5px;
+                margin: 0px 10px 10px 0px;
+                border-radius: 5px;
+                font-weight: 900;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal;
+            }
+
+            #column_Right {
+                width: 25%;
+                height: 100%;
+                margin-top: 100px;
+                margin-left: 15px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            #rightSide_Title {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 700;
+                font-size: 10pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #rightSide_Company {
+                width: 100%;
+                height: 100%;
+                color: #2079c7;
+                font-weight: 400;
+                font-size: 11pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #rightSide_Date {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+                color: #666666;
+                text-decoration: none;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal; 
+            }
+
+            #rightSide_Description {
+                width: 100%;
+                height: 100%;
+                color: #000000;
+                font-weight: 400;
+                font-size: 9pt;
+                font-family: "Merriweather";
+                font-style: normal;
+            }
+
+            #personal_Information {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #personal_Information a, #alternate_Language a {
+                color: #2079c7;
+                text-decoration: none;
+            }
+
+            #personal_Information span, #languages span {
+                color: black;
+                font-weight: 100;
+                font-size: 9pt;
+                font-family: "Arial";
+            }
+
+            #education {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #courses {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #awards {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #languages {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #extras {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #internacional_Experiences {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+
+            #alternate_Language {
+                width: 100%;
+                height: 100%;
+                color: black;
+                font-weight: 700;
+                font-size: 9pt;
+                font-family: "Arial"; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="content">
+                <!-- Left Side Content Start -->
+                <div id="column_Left">
+                    <div id="name">Douglas Falcão</div>
+
+                    <div id="summary">
+                        <span>Summary</span>
+                        <div>Brazilian/Portuguese Nacional, with 38 years of age, 14 of which have been
+                            focused on building automated solutions from the ground up, to administering
+                            systems and mapping out business needs while bridging the gap between the
+                            business side and IT Teams. Experienced Python Developer, driven to automate
+                            tasks and analysis with Pandas and Selenium. Currently a Digital Transformation
+                            Specialist, who is also the technical lead of a 6 person team focused on
+                            automating numerous reports for Controlled Pharmaceutical Substances to
+                            LatAm countries authorities.
+                        </div>
+                    </div>
+
+                    <div id="experiences">
+                        <h1>EXPERIENCES</h1>
+                        <div id="jobs">
+                            <div id="jobs_Title">Process Excellence and Digital Transformation Specialist</div>
+                            <div id="jobs_Company">Merck Group</div>
+                            <div id="jobs_Date">AUGUST 2021 - PRESENT</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Leads a 6-member team on multiple projects for the Regulatory Management & Trade Compliance team in LatAm.</li>
+                                    <li>Daily work with Agile methodologies, applying them to both Robotic Process Automation (RPA) Solutions as well as Global Project Management.</li>
+                                    <li>Gather client and sponsor expectations, transforming them into requirements and converting them into technical solutions (Python, Pandas, Selenium, SAP Scripting Tracker and Microsoft Power Platform) that bring considerable saving-time to the department.</li>
+                                    <li>Generation of Department Key Performance Indicators (KPIs) and Visual Dashboards for Leadership decision making.</li>
+                                    <li>Analyze As-Is business processes and assess automation potentials and risks.</li>
+                                    <li>Implements the full life cycle of process automation solutions: Identifying automation opportunities, crafting solutions, developing, testing alongside side Subject Matter Experts (SMEs) & deployment.</li>
+                                    <li>Business administrator of an internal Order Tracking Tool and liaison between Merck Business, Merck IT, and External IT Suppliers.</li>
+                                    <li>Currently a member of the Engagement Champions Network at Merck, working to map out all improvement opportunities to keep employees engaged, and improve talent retention within the company.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="jobs">
+                            <div id="jobs_Title">Data Analyst</div>
+                            <div id="jobs_Company">Santander Brasil</div>
+                            <div id="jobs_Date">MARCH 2019 - JULY 2021</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Focused on financial data analysis, generation of management reports (Python, Pandas, Spark) in a Hadoop environment.</li>
+                                    <li>Emphasis on department KPIs (Spark, Impala), Data Extraction, Transformation and Load (ETL) with Pentaho, and data scraping RPAs (Python, Selenium).</li>
+                                    <li>Administrator of an internal payment tool developed with C#.Net and Microsoft SQL Server.</li>
+                                    <li>Led the structuring project for the migration of the entire Onboarding Payment pipeline from undocumented Legacy System to Pipefy.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="jobs">
+                            <div id="jobs_Title">Web Content Developer</div>
+                            <div id="jobs_Company">XManteiga</div>
+                            <div id="jobs_Date">FEBRUARY 2017 - FEBRUARY 2019</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Developed content for entertainment news.</li>
+                                    <li>Conducted document revisions and Portuguese/English translations.</li>
+                                    <li>Supported all website improvements (HTML5, CSS3, Python, Flask) and adjustment inside the web content management system.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div id="pageBreak"></div> -->
+
+                        <div id="jobs">
+                            <div id="jobs_Title">PHP Developer</div>
+                            <div id="jobs_Company">Somar Meteorologia Assessoria</div>
+                            <div id="jobs_Date">APRIL 2016 - DECEMBER 2016</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Developed, documented, and quality-tested the Somar Meteorological Forecasting API (PHP, Laravel, Lumen).</li>
+                                    <li>Created weather graphic model views (JavaScript, Highcharts).</li>
+                                    <li>Part of the support team for the company's web application (HTML5, CSS3, JavaScript, PHP).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="jobs">
+                            <div id="jobs_Title">Business Requirement Coordinator</div>
+                            <div id="jobs_Company">Universidade Federal Fluminense</div>
+                            <div id="jobs_Date">OCTOBER 2012 - APRIL 2016</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Started as a Business Requirements Analyst mapping client’s business requirements and transforming them into Unified Modeling Language (UML) diagrams for future solution development.</li>
+                                    <li>Promoted to Coordinator of a 4-member task force focused on getting the project back on track and finished by the estimated delivery date.</li>
+                                    <li>Led the delivery of an extension project focused on improving the Process Flowcharts before delivery to the client.</li>
+                                    <li>Administrator for the Enterprise Architect (EA) tool for diagramming Business Use Cases and information flowcharts.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="jobs">
+                            <div id="jobs_Title">Tech Lead</div>
+                            <div id="jobs_Company">IBM</div>
+                            <div id="jobs_Date">JULY 2011 - SEPTEMBER 2012</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Web Developer for the GWPS Group inside IBM, involved in updating internal institutional portfolio websites (HTML, CSS, JavaScript).</li>
+                                    <li>Promoted to Tech Lead for the internal tool ECM - Common Components, leading training sessions and being the Point of Contact for the tool with all new employees.</li>
+                                    <li>Involved in updating company flagship websites, creating new internal institutional portfolio landing pages, and direct communication with Global Project Managers and Tech Leads for other tools.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="jobs">
+                            <div id="jobs_Title">PHP Developer</div>
+                            <div id="jobs_Company">Lampada Global</div>
+                            <div id="jobs_Date">NOVEMBER 2010 - JULY 2011</div>
+                            <div id="jobs_Description">
+                                <ul>
+                                    <li>Senior Programmer's assistant and Customer Support for National and International clients.</li>
+                                    <li>Focused on minor improvements, corrections and small customizations to the SugarCRM Tool (PHP).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="qualifications">
+                        <h1>QUALIFICATIONS</h1>
+
+                        <div id="qualifications_Header" style="margin-top: 20px;">Languages</div>
+                        <ul>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>C#</li>
+                            <li>Javascript</li>
+                            <li>HTML/CSS</li>
+                            <li>Pascal</li>
+                            <li>Objective-C</li>
+                            <li>UML</li>
+                        </ul>
+
+                        <div id="qualifications_Header">Modules, Packages, Libraries</div>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>PyAutoGUI</li>
+                            <li>Beautiful Soup</li>
+                            <li>urllib</li>
+                            <li>PySpark</li>
+                            <li>Selenium</li>
+                            <li>PHP Mailer</li>
+                        </ul>
+
+                        <div id="qualifications_Header">Frameworks</div>
+                        <ul>
+                            <li>Flask</li>
+                            <li>Laravel/Lumen</li>
+                            <li>ASP.NET</li>
+                            <li>ReactJS</li>
+                            <li>JQuery</li>
+                            <li>Delphi</li>
+                        </ul>
+
+                        <div id="qualifications_Header">Database</div>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>SQL Server</li>
+                            <li>SQLite</li>
+                            <li>PostgreSQL</li>
+                            <li>Impala</li>
+                            <li>Hive</li>
+                        </ul>
+
+                        <!-- <div id="pageBreak"></div> -->
+
+                        <div id="qualifications_Header">Other Applications</div>
+                        <ul>
+                            <li>Microsoft Office Package</li>
+                            <li>Microsoft Power Platform</li>
+                            <li>SAP</li>
+                            <li>Enterprise Architect (EA)</li>
+                            <li>Pentaho</li>
+                            <li>SugarCRM</li>
+                        </ul>
+
+                        <div id="qualifications_Header">Operating System</div>
+                        <ul>
+                            <li>Microsoft Windows</li>
+                            <li>Linux Ubuntu</li>
+                            <li>Apple MacOS</li>
+                            <li>Apple iOS</li>
+                            <li>Google Android</li>
+                        </ul>
+
+                        <div id="qualifications_Header">General Knowledge</div>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>RPAs</li>
+                            <li>Rest API</li>
+                            <li>Business Process Mapping</li>
+                            <li>Business Requirements Mapping</li>
+                            <li>Team Coordination</li>
+                            <li>Flowchart Diagramming</li>
+                            <li>Use-Case Development (As Is/To Be)</li>
+                            <li>Git</li>
+                            <li>Agile Methodoligies (Scrum/Kanban)</li>
+                            <li>KPIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Left Side Content End -->
+
+                <!-- Right Side Content Start -->
+                <div id="column_Right">
+                    <div id="personal_Information">
+                        Santo André, SP - Brazil<br/>
+                        Mobile: <span>+55 11 98258-3242</span><br/>
+                        Email: <span><a href="mailto:d.farielo@gmail.com">d.farielo@gmail.com</a></span><br/>
+                        LinkedIn: <span><a href="https://www.linkedin.com/in/douglasffalcao/">DouglasFFalcao</a></span><br/>
+                        GitHub: <span><a href="https://github.com/menphes">Menphes</a></span><br/>
+                        Curriculo PT-BR: <a href="https://douglasfalcao-cv-pt-br.tiiny.site/"><span id="year"><script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script></span></a>
+                    </div> 
+
+                    <div id="education">
+                        <h1>EDUCATION</h1>
+                        <div id="rightSide_Title">Faculdade Descomplica<br/>
+                            Rio de Janeiro, RJ
+                        </div>
+                        <div id="rightSide_Description">Master's Degree in Data Science.</div>
+                        <div id="rightSide_Date">JUNE 2023 - ON-GOING</div>
+
+                        <div id="rightSide_Title">Universidade do Grande ABC<br/>
+                            Santo André, SP
+                        </div>
+                        <div id="rightSide_Description">Bachelor's Degree in Computer Science.</div>
+                        <div id="rightSide_Date">JANUARY 2007 - DECEMBER 2010</div>
+                    </div>
+
+                    <div id="courses">
+                        <h1>COURSES</h1>                
+                        <div id="rightSide_Title">Advanced User Enterprise Architect</div>
+                        <div id="rightSide_Company">Grupo CTGI</div>
+                        <div id="rightSide_Date">DECEMBER 2012 - DECEMBER 2012</div>
+
+                        <div id="rightSide_Title">FISK English Proficiency</div>
+                        <div id="rightSide_Company">FISK English School</div>
+                        <div id="rightSide_Date">JANUARY 2001 - DECEMBER 2001</div>
+                    </div>
+
+                    <div id="awards">
+                        <h1>HONORS & AWARDS</h1>
+                        <div id="rightSide_Title">Santander Hackathon: The Code Force - Innovation</div>
+                        <div id="rightSide_Company">Santander Brasil</div>
+                        <div id="rightSide_Date">MARCH 2021</div>
+
+                        <div id="rightSide_Title">Digital Mindset Award for RM&TC</div>
+                        <div id="rightSide_Company">Merck Group</div>
+                        <div id="rightSide_Date">DECEMBER 2022</div>
+                    </div>
+
+                    <div id="languages">
+                        <h1>LANGUAGES</h1>
+                        English - <span>Native</span><br/>
+                        Portuguese - <span>Native</span><br/>
+                        Spanish - <span>Intermediary</span>
+                    </div>
+
+                    <div id="extras">
+                        <h1>EXTRAS</h1>
+                        <div id="rightSide_Title">Dual Citizenship</div>
+                        <div id="rightSide_Description">Availability to work anywhere within the LatAm and EU regions</div>
+                    </div>
+
+                    <div id="internacional_Experiences">
+                        <h1>INTERNATIONAL EXPERIENCES</h1>
+                        <div id="rightSide_Title">United States - Golden, CO</div>
+                        <div id="rightSide_Description">
+                            Study - Shelton Elementary<br/>
+                            Study - Bell Middle School
+                        </div>
+                        <div id="rightSide_Date">JUNE 1994 - DECEMBER 1998</div>
+                    </div>
+                </div>
+                <!-- Right Side Content End -->
+            </div>
+        </div>
+    </body>
+</html>
